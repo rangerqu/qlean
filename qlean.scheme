@@ -1,0 +1,116 @@
+*                                    qlean.scheme
+
+*!  ersion 0.1    19feb2016
+
+#include s2color
+
+color    background    white
+
+margin    axis_title          small
+margin    legend_boxmargin    medium
+
+
+numstyle    legend_cols      1
+gsize legend_row_gap         zero
+gsize legend_key_xsize       5
+gridringstyle legend_ring    0
+clockdir legend_position     12
+
+gsize                 small
+gsize gap             tiny
+gsize text            small
+gsize body            small
+gsize small_body      small
+gsize heading         medsmall
+gsize subheading      medsmall
+gsize axis_title      medsmall
+gsize matrix_label    large
+gsize label           small     
+gsize small_label     tiny     
+gsize matrix_marklbl  tiny     
+gsize key_label       small     
+gsize note            tiny
+gsize star            medsmall
+gsize text_option     medsmall     
+gsize dot_rectangle   third_tiny
+gsize axis_space      half_tiny
+gsize axis_title_gap  minuscule
+gsize tick            tiny
+gsize minortick       half_tiny
+* gsize minortick       .55
+gsize tickgap         half_tiny
+gsize notickgap       tiny
+gsize tick_label      small
+gsize tick_biglabel   medsmall
+gsize minortick_label vsmall
+gsize filled_text     medsmall
+gsize reverse_big     large
+gsize alternate_gap   zero
+gsize title_gap       vsmall
+gsize key_gap         vsmall
+gsize key_linespace   vsmall
+gsize star_gap        minuscule
+gsize legend_colgap   third_tiny
+gsize label_gap       half_tiny
+gsize matrix_mlblgap  half_tiny
+gsize barlabel_gap    tiny
+
+color    grid          white
+color    major_grid    white
+color    minor_grid    white
+
+linewidth histogram    vthin
+linewidth bar          vthin
+
+symbol p1     circle_hollow
+symbol p2     x
+symbol p3     diamond_hollow
+symbol p4     triangle_hollow
+symbol p5     plus
+symbol p6     square_hollow
+symbol p7     smcircle
+symbol p8     smdiamond
+symbol p9     smsquare
+symbol p10    smtriangle
+symbol p11    smx
+symbol p12    circle
+symbol p13    square
+symbol p14    triangle
+
+color histogram      gs8
+color histback       gs10
+color histogram_line black
+
+color p     plr1
+color p1 	black
+color p2 	plr1 // red
+color p3 	ply1 // yellow/brownish
+color p4 	plg1 // lght greenish
+color p5 	plb1 // blue
+color p6 	pll1 // purple
+color p7	plr2 // red
+color p8 	ply2 // yellow/brownish
+color p9 	plg2 // greenish
+color p10 	plb2 // bluish
+color p11 	pll2 // purple
+color p12 	ply3 // orange
+color p13 	plg3 // green
+color p14 	plb3 // blue
+color p15 	pll3 // purple
+
+color pline     plr1
+color p1line 	black
+color p2line 	plr1 // red
+color p3line 	ply1 // yellow/brownish
+color p4line 	plg1 // lght greenish
+color p5line 	plb1 // blue
+color p6line 	pll1 // purple
+color p7line	plr2 // red
+color p8line 	ply2 // yellow/brownish
+color p9line 	plg2 // greenish
+color p10line 	plb2 // bluish
+color p11line 	pll2 // purple
+color p12line 	ply3 // orange
+color p13line 	plg3 // green
+color p14line 	plb3 // blue
+color p15line 	pll3 // purple
