@@ -1,0 +1,276 @@
+*                                    qlean.scheme
+
+*!  version 0.2    20may2016
+*!  version 0.1    19feb2016
+
+#include s2color
+
+color    background    white
+
+color box           white
+color textbox       white
+color mat_label_box white
+color filled_text        black
+color filled             white
+color bylabel_outline    white
+
+margin    axis_title          small
+margin    legend_boxmargin    medium
+
+numstyle    legend_cols      1
+gsize legend_row_gap         zero
+gsize legend_key_xsize       5
+gridringstyle legend_ring    0
+clockdir legend_position     12
+
+gsize                 small
+gsize gap             tiny
+gsize text            small
+gsize body            small
+gsize small_body      small
+gsize heading         medium
+gsize subheading      medsmall
+gsize axis_title      small
+gsize matrix_label    large
+gsize label           small     
+gsize small_label     tiny     
+gsize matrix_marklbl  tiny     
+gsize key_label       small     
+gsize note            small
+gsize star            medsmall
+gsize text_option     medsmall     
+gsize dot_rectangle   third_tiny
+gsize axis_space      half_tiny
+gsize axis_title_gap  minuscule
+gsize tick            tiny
+gsize minortick       half_tiny
+* gsize minortick       .55
+gsize tickgap         half_tiny
+gsize notickgap       tiny
+gsize tick_label      small
+gsize tick_biglabel   medsmall
+gsize minortick_label vsmall
+gsize filled_text     medsmall
+gsize reverse_big     large
+gsize alternate_gap   zero
+gsize title_gap       vsmall
+gsize key_gap         vsmall
+gsize key_linespace   vsmall
+gsize star_gap        minuscule
+gsize legend_colgap   vsmall
+gsize label_gap       half_tiny
+gsize matrix_mlblgap  half_tiny
+gsize barlabel_gap    tiny
+
+gsize legend_row_gap    tiny
+gsize legend_key_gap    vsmall
+gsize legend_key_ysize  vsmall
+
+gsize zyx2legend_key_gap    tiny
+gsize zyx2legend_key_xsize  vhuge
+gsize zyx2rowgap            zero
+
+* gsize clegend_width     huge
+* gsize clegend_height    zero
+
+gsize pie_explode       medium
+gsize pielabel_gap      zero
+
+gsize sts_risktable_space third_tiny
+gsize sts_risktable_tgap  zero
+gsize sts_risktable_lgap  zero
+gsize sts_risk_label      medsmall
+gsize sts_risk_title      medsmall
+gsize sts_risk_tick       zero
+
+linestyle  legend		none
+linestyle  plotregion		none
+anglestyle vertical_tick	horizontal
+
+linewidth xyline       thin
+linewidth histogram    vthin
+linewidth bar          vthin
+
+
+linewidth p                  thin
+linewidth axisline           vthin
+linewidth tick               vthin
+linewidth minortick          vthin
+linewidth background         vthin
+linewidth foreground         vthin
+linewidth major_grid         thin
+linewidth minor_grid         thin
+linewidth refmarker          vthin
+linewidth matrixmark         vthin
+linewidth dots               thin
+linewidth dot_line           thin
+linewidth dot_area           thin
+linewidth dotmark            thin
+linewidth plotregion         vthin
+linewidth legend             vthin
+linewidth pie                vthin
+linewidth reverse_big        vthin
+linewidth sunflower          vthin
+linewidth matrix_plotregion  vthin
+linewidth text_option        vthin
+linewidth ci                 thin
+linewidth ci2                thin
+linewidth ci_area            thin
+linewidth ci2_area           thin
+linewidth pbar               none
+linewidth p1bar              none
+linewidth p2bar              none
+linewidth p3bar              none
+linewidth p4bar              none
+linewidth p5bar              none
+linewidth p6bar              none
+linewidth p7bar              none
+linewidth p8bar              none
+linewidth p9bar              none
+linewidth p10bar             none
+linewidth p11bar             none
+linewidth p12bar             none
+linewidth p13bar             none
+linewidth p14bar             none
+linewidth p15bar             none
+linewidth pline               medthin
+linewidth p1line              medthin
+linewidth p2line              medthin
+linewidth p3line              medthin
+linewidth p4line              medthin
+linewidth p5line              medthin
+linewidth p6line              medthin
+linewidth p7line              medthin
+linewidth p8line              medthin
+linewidth p9line              medthin
+linewidth p10line             medthin
+linewidth p11line             medthin
+linewidth p12line             medthin
+linewidth p13line             medthin
+linewidth p14line             medthin
+linewidth p15line             medthin
+linewidth rline 	      medthin
+linewidth p1lineplot  medthin
+linewidth p2lineplot  medthin
+linewidth p3lineplot  medthin
+linewidth p4lineplot  medthin
+linewidth p5lineplot  medthin
+linewidth p6lineplot  medthin
+linewidth p7lineplot  medthin
+linewidth p8lineplot  medthin
+linewidth p9lineplot  medthin
+linewidth p10lineplot medthin
+linewidth p11lineplot medthin
+linewidth p12lineplot medthin
+linewidth p13lineplot medthin
+linewidth p14lineplot medthin
+linewidth p15lineplot medthin
+
+linewidth small small
+
+linewidth refline      vthin
+
+color grid             white
+color major_grid       white
+color minor_grid       white
+* color axisline       gs10
+
+color matrix         gs6    
+color matrixmarkline gs6    
+color refmarker      gs11
+color refmarkline    black
+color histogram      gs8
+color histback       gs10
+color histogram_line black
+
+color ci_line      gs8
+color ci_arealine  gs12
+color ci_area      gs12
+color ci_symbol    gs9
+color ci2_line     gs4
+color ci2_arealine gs10
+color ci2_area     gs10
+color ci2_symbol   gs6
+
+intensity ci_area    inten30
+
+yesno draw_minor_vgrid  yes
+yesno draw_minor_hgrid  yes
+
+symbol p1     circle_hollow
+symbol p2     x
+symbol p3     diamond_hollow
+symbol p4     triangle_hollow
+symbol p5     plus
+symbol p6     square_hollow
+symbol p7     circle
+symbol p8     diamond
+symbol p9     square
+symbol p10    triangle
+symbol p11    smcircle
+symbol p12    smdiamond
+symbol p13    smsquare
+symbol p14    smtriangle
+symbol p15    smx
+
+
+
+linepattern p1line  solid
+linepattern p2line  solid
+linepattern p3line  vshortdash
+linepattern p4line  longdash_dot
+linepattern p5line  longdash
+linepattern p6line  dash_dot
+linepattern p7line  dot
+linepattern p8line  shortdash_dot
+linepattern p9line  tight_dot
+linepattern p10line dash_dot_dot
+linepattern p11line longdash_shortdash
+linepattern p12line dash_3dot
+linepattern p13line longdash_dot_dot
+linepattern p14line shortdash_dot_dot
+linepattern p15line longdash_3dot
+
+linepattern ci          solid
+linepattern ci_area     solid
+
+linepattern grid        dot
+linepattern major_grid  dot
+linepattern minor_grid  dot
+
+intensity bar 50
+intensity histogram          50
+
+color p     plr1
+color p1 	black
+color p2 	plr1 // red
+color p3 	ply1 // yellow/brownish
+color p4 	plg1 // lght greenish
+color p5 	plb1 // blue
+color p6 	pll1 // purple
+color p7	plr2 // red
+color p8 	ply2 // yellow/brownish
+color p9 	plg2 // greenish
+color p10 	plb2 // bluish
+color p11 	pll2 // purple
+color p12 	ply3 // orange
+color p13 	plg3 // green
+color p14 	plb3 // blue
+color p15 	pll3 // purple
+
+color pline     plr1
+color p1line 	black
+color p2line 	plr1 // red
+color p3line 	ply1 // yellow/brownish
+color p4line 	plg1 // lght greenish
+color p5line 	plb1 // blue
+color p6line 	pll1 // purple
+color p7line	plr2 // red
+color p8line 	ply2 // yellow/brownish
+color p9line 	plg2 // greenish
+color p10line 	plb2 // bluish
+color p11line 	pll2 // purple
+color p12line 	ply3 // orange
+color p13line 	plg3 // green
+color p14line 	plb3 // blue
+color p15line 	pll3 // purple
