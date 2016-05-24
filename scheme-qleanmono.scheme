@@ -213,7 +213,21 @@ symbol p13    smsquare
 symbol p14    smtriangle
 symbol p15    smx
 
-
+linepattern p1lineplot  solid
+linepattern p2lineplot  dash
+linepattern p3lineplot  dash_dot
+linepattern p4lineplot  vshortdash
+linepattern p5lineplot  dash_dot_dot
+linepattern p6lineplot  longdash_dot
+linepattern p7lineplot  longdash
+linepattern p8lineplot  shortdash_dot
+linepattern p9lineplot  dot
+linepattern p10lineplot tight_dot
+linepattern p11lineplot shortdash_dot_dot
+linepattern p12lineplot dash_3dot
+linepattern p13lineplot longdash_dot_dot
+linepattern p14lineplot longdash_shortdash
+linepattern p15lineplot longdash_3dot
 
 linepattern p1line  solid
 linepattern p2line  solid
@@ -241,22 +255,22 @@ linepattern minor_grid  dot
 intensity bar 50
 intensity histogram          50
 
-color p     plr1
-color p1 	black
-color p2 	plr1 // red
-color p3 	ply1 // yellow/brownish
-color p4 	plg1 // lght greenish
-color p5 	plb1 // blue
-color p6 	pll1 // purple
-color p7	plr2 // red
-color p8 	ply2 // yellow/brownish
-color p9 	plg2 // greenish
-color p10 	plb2 // bluish
-color p11 	pll2 // purple
-color p12 	ply3 // orange
-color p13 	plg3 // green
-color p14 	plb3 // blue
-color p15 	pll3 // purple
+color p       black
+color p1      black
+color p2      black
+color p3      black
+color p4      black
+color p5      gs9
+color p6      gs9
+color p7      gs9
+color p8      gs9
+color p9      gs12
+color p10     gs12
+color p11     gs12
+color p12     gs12
+color p13     gs6
+color p14     gs6
+color p15     gs6
 
 color pline     plr1
 color p1line 	black
@@ -274,3 +288,5 @@ color p12line 	ply3 // orange
 color p13line 	plg3 // green
 color p14line 	plb3 // blue
 color p15line 	pll3 // purple
+
+* color plineplot    black
