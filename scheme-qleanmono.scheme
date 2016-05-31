@@ -215,12 +215,12 @@ symbol p15    smx
 
 linepattern p1lineplot  solid
 linepattern p2lineplot  dash
-linepattern p3lineplot  dash_dot
+linepattern p3lineplot  longdash_dot
 linepattern p4lineplot  vshortdash
 linepattern p5lineplot  dash_dot_dot
-linepattern p6lineplot  longdash_dot
+linepattern p6lineplot  shortdash_dot
 linepattern p7lineplot  longdash
-linepattern p8lineplot  shortdash_dot
+linepattern p8lineplot  dash_dot
 linepattern p9lineplot  dot
 linepattern p10lineplot tight_dot
 linepattern p11lineplot shortdash_dot_dot
